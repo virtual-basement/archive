@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"ēdruta vīs ābrar vīlūsa hāedar</title>
+    <link rel="stylesheet" href="libstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Library of The Great Basement</h1>
+        <input type="text" id="search" placeholder="Search for books...">
+    </header>
+    
+    <main>
+        <div class="sorting">
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortBooks()">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+                <option value="date">Rating</option>
+            </select>
+        </div>
+
+        <div class="book-list" id="bookList">
+            <!-- Books will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>someone cooked here, right?</p>
+    </footer>
+
+    <script src="libscript.js"></script>
+</body>
+</html>
